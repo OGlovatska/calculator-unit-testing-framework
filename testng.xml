@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CalculatorTestSuite" parallel="methods" thread-count="4">
+    <test name="PositiveTests">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.calculator.CosTest"/>
+            <class name="com.epam.calculator.CtgTest"/>
+            <class name="com.epam.calculator.DivDoubleTest"/>
+            <class name="com.epam.calculator.DivLongTest"/>
+            <class name="com.epam.calculator.IsNegativeTest"/>
+            <class name="com.epam.calculator.IsPositiveTest"/>
+            <class name="com.epam.calculator.MultDoubleTest"/>
+            <class name="com.epam.calculator.MultLongTest"/>
+            <class name="com.epam.calculator.PowTest"/>
+            <class name="com.epam.calculator.SinTest"/>
+            <class name="com.epam.calculator.SqrtTest"/>
+            <class name="com.epam.calculator.SubDoubleTest"/>
+            <class name="com.epam.calculator.SubLongTest"/>
+            <class name="com.epam.calculator.SumDoubleTest"/>
+            <class name="com.epam.calculator.SumLongTest"/>
+            <class name="com.epam.calculator.TgTest"/>
+        </classes>
+    </test>
+    <test name="NegativeTests">
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.calculator.DivDoubleTest"/>
+            <class name="com.epam.calculator.DivLongTest"/>
+            <class name="com.epam.calculator.MultDoubleTest"/>
+            <class name="com.epam.calculator.MultLongTest"/>
+            <class name="com.epam.calculator.SubLongTest"/>
+            <class name="com.epam.calculator.SumDoubleTest"/>
+            <class name="com.epam.calculator.SumLongTest"/>
+        </classes>
+    </test>
+</suite>
